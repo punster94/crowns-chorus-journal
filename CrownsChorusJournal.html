@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Winston's Field Notes &mdash; Crowns Chorus Expedition</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;height:100%;box-sizing:border-box;}
+  *{box-sizing:border-box;}
+</style>
+<div style="position:relative;width:100vw;height:100vh;overflow:hidden;background:oklch(0.16 0.015 45);">
+  <div id="track" style="display:flex;width:1200%;height:100%;transition:transform 0.75s cubic-bezier(0.65,0,0.35,1);transform:translateX(0%);">
+
+    <div style="flex:0 0 8.3333%;height:100%;position:relative;overflow:hidden;background:oklch(0.2 0.02 50);cursor:pointer;" onclick="goNext()">
+      <div style="position:absolute;inset:0;background-image:radial-gradient(circle at 15% 20%, oklch(0.28 0.02 55 / 0.9), transparent 45%),radial-gradient(circle at 85% 80%, oklch(0.26 0.02 50 / 0.9), transparent 50%),radial-gradient(circle at 50% 50%, oklch(0.23 0.015 50), oklch(0.16 0.015 45));"></div>
+      <div style="position:absolute;inset:0;box-shadow:inset 0 0 260px oklch(0.05 0.01 40 / 0.75);"></div>
+      <div style="position:absolute;left:50%;top:38%;width:78%;height:2px;transform:translate(-50%,-50%) rotate(-0.4deg);background:oklch(0.12 0.01 40 / 0.7);box-shadow:0 3px 8px oklch(0.05 0 0 / 0.5);"></div>
+      <div style="position:absolute;left:50%;top:38%;width:64px;height:64px;transform:translate(-50%,-50%);border-radius:50%;border:5px solid oklch(0.4 0.06 60 / 0.7);background:radial-gradient(circle at 35% 30%, oklch(0.55 0.07 65), oklch(0.3 0.04 55));box-shadow:0 3px 10px oklch(0.05 0 0 / 0.6);"></div>
+      <div style="position:relative;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 8%;font-family:'EB Garamond',serif;">
+        <div style="font-family:'Caveat',cursive;font-weight:600;font-size:1.7vw;letter-spacing:2px;color:oklch(0.65 0.05 70 / 0.85);margin-bottom:18px;">the private journal of</div>
+        <div style="font-family:'Caveat',cursive;font-weight:700;font-size:7.8vw;line-height:0.95;color:oklch(0.86 0.03 75);text-shadow:0 2px 10px oklch(0.05 0 0 / 0.6);">Winston</div>
+        <div style="font-family:'EB Garamond',serif;font-style:italic;font-size:2vw;color:oklch(0.72 0.04 70);margin-top:22px;">Field Notes of the Crowns Chorus Expedition</div>
+        <div style="margin-top:56px;width:120px;height:2px;background:oklch(0.5 0.06 65 / 0.6);"></div>
+        <div style="font-family:'Caveat',cursive;font-size:1.8vw;color:oklch(0.6 0.05 65);margin-top:22px;">Sessions One through Nine</div>
+        <div style="font-family:'Caveat',cursive;font-size:1.6vw;color:oklch(0.65 0.07 65);margin-top:60px;">click to begin reading &#8594;</div>
+      </div>
+    </div>
+
+    <div style="flex:0 0 8.3333%;height:100%;position:relative;display:flex;flex-direction:column;background-color:oklch(0.95 0.015 80);background-image:radial-gradient(circle at 8% 10%, oklch(0.55 0.07 40 / 0.12), transparent 42%), radial-gradient(circle at 94% 88%, oklch(0.5 0.08 50 / 0.10), transparent 46%), radial-gradient(circle at 82% 12%, oklch(0.6 0.05 90 / 0.10), transparent 35%);font-family:'EB Garamond',serif;color:oklch(0.24 0.03 40);">
+      <div style="position:absolute;inset:0;box-shadow:inset 0 0 200px oklch(0.35 0.05 45 / 0.28);pointer-events:none;"></div>
+      <div style="position:absolute;top:0;right:0;width:70px;height:70px;background:linear-gradient(135deg, oklch(0.88 0.02 75) 50%, oklch(0.78 0.03 60) 52%);box-shadow:-4px 4px 10px oklch(0.3 0.03 40 / 0.35);cursor:pointer;" onclick="goNext()"></div>
+      <div style="padding:70px 130px 0;">
+        <div style="display:flex;align-items:baseline;gap:24px;">
+          <div style="font-family:'Caveat',cursive;font-weight:700;font-size:62px;color:oklch(0.4 0.09 40);">Session 1</div>
+          <div style="font-family:'Caveat',cursive;font-size:29px;color:oklch(0.45 0.06 45 / 0.75);">Entry 1 · Date: ???</div>
+        </div>
+        <div style="width:240px;height:2px;background:oklch(0.35 0.05 40 / 0.5);transform:rotate(-0.4deg);margin:16px 0 0;"></div>
+      </div>
+      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px 130px 90px;">
+        <div style="font-size:29px;line-height:1.6;max-width:1550px;">We officially started our ascent up the mountains today, and the weather has taken a dramatic turn. It certainly slipped my mind that the cold weather must be accounted for, and indeed it slipped my feet too! While navigating some natural stairs, I discovered a rather icy patch and had a bit of a nasty fall. While I recovered, I could make out the sounds of exertion of Myfanwy in the ravine below. I thought she was scouting ahead, but as it would happen, she tripped some sort of trap and was waylaid quite far from us. Our mountain guide, a Jotunborn who supposedly goes by the name Tagrin, had us well on our way up the mountain pass with the aid of his primal skills. But none could have predicted what would happen to Orion. I can't even say that I know what happened, and it occurred not but 30 feet ahead of me. What I do know is that after he fell from that narrow path, we were no longer alone.
+        <br><br>
+        We found ourselves suddenly ambushed in the epicenter of a coven of wintery witches — Hags, to be precise. These Hags were not alone either, and all too soon from the low cloud cover several swarms of chilling fey emerged. They descended upon us, though mostly Orion as he blared his alarm in quite an obnoxious way. Even as they remained focused on him, the air temperature dropped rapidly and quite severely.
+        <br><br>
+        The leader of this coven let loose a spell of some kind at Tagrin, despite Myfanwy attempting to interrupt it with a well timed shot from her bow. At first glance I had mistaken her as a simple winter Hag like the others. But after thinking back to my academy days I remembered stories of a rarer variety with the distinct pock mark features I observed — we were facing off against a Moon Hag! Hags are dangerous creatures when you allow them to work together, so I knew our best course of action was to take down the weaker members of the coven first.
+        <br><br>
+        Our elven companion turned their sights on one of the Winter Hags and fired away with spells and arrows. I quickly scanned for the other and delivered a well placed shot, pinning her arm in place and noting their apparent weakness to fire exposure. Tagrin began emanating a heat which caused the fey swarms to start dropping while Orion kept them distracted.
+        <br><br>
+        I loosed another arrow into my target, but then everything went black. When I suddenly came to, I was being accosted by a different Winter Hag, and time was not on my side. A quick shot to the ankle sent her toppling into the ravine, dead. The fey were well dispersed, and only the Moon Hag and her last subordinate remained. I hid against the cliff face to keep from drawing her ire.
+        <br><br>
+        Orion turned his attention to the last Winter Hag, running and grabbing her mid-flight, and I took a final shot at her. It wasn't long until Orion and Tagrin were upon the Moon Hag — Tagrin somehow threw Orion up ten feet to a higher cliff face. With constant harrying by Myfanwy's arrows, the Hag seemed unable to invoke any of her most threatening capabilities now that her coven had been slain. All she could do was rend wildly at Orion's shield until she was finally slain by Tagrin.
+        <br><br>
+        With the area secured, we set up camp in the ravine below. Some of us heard the sound of pages flapping in the wind, and when we came upon it we found a strange book. I discerned a primal power within its pages but it was otherwise safe to collect. Myfanwy immediately recognized the Jotunborn script upon it. Of course, the first text we find on our expedition is useless to me! I'll have to ask Tagrin to dictate a translation later.</div>
+      </div>
+    </div>
+
+    <div style="flex:0 0 8.3333%;height:100%;position:relative;display:flex;flex-direction:column;background-color:oklch(0.95 0.015 80);background-image:radial-gradient(circle at 90% 8%, oklch(0.55 0.07 40 / 0.12), transparent 42%), radial-gradient(circle at 6% 90%, oklch(0.5 0.08 50 / 0.11), transparent 46%), radial-gradient(circle at 20% 20%, oklch(0.6 0.05 90 / 0.08), transparent 35%);font-family:'EB Garamond',serif;color:oklch(0.24 0.03 40);">
+      <div style="position:absolute;inset:0;box-shadow:inset 0 0 200px oklch(0.35 0.05 45 / 0.28);pointer-events:none;"></div>
+      <div style="position:absolute;top:0;right:0;width:70px;height:70px;background:linear-gradient(135deg, oklch(0.88 0.02 75) 50%, oklch(0.78 0.03 60) 52%);box-shadow:-4px 4px 10px oklch(0.3 0.03 40 / 0.35);cursor:pointer;" onclick="goNext()"></div>
+      <div style="padding:70px 130px 0;">
+        <div style="display:flex;align-items:baseline;gap:24px;">
+          <div style="font-family:'Caveat',cursive;font-weight:700;font-size:58px;color:oklch(0.4 0.09 40);">Session 2</div>
+          <div style="font-family:'Caveat',cursive;font-size:27px;color:oklch(0.45 0.06 45 / 0.75);">Entry 2 · Date: ???</div>
+        </div>
+        <div style="width:240px;height:2px;background:oklch(0.35 0.05 40 / 0.5);transform:rotate(-0.4deg);margin:16px 0 0;"></div>
+      </div>
+      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px 130px 90px;">
+        <div style="font-size:28px;line-height:1.58;max-width:1550px;">I awoke to slightly alarming news from Orion that overnight he heard what he assumed to be a Wyrm flapping overhead, apparently eating the bodies of the Hags we had dispatched yesterday. I did not know that Hags were included in the diet of Wyrms, but I suppose in these climes anything will do.
+        <br><br>
+        After leaving the tent, I notice Tagrin staring up at the sky for much longer than would seem useful. After some time he proclaimed that today would be a good travel day. I must ask him what observable evidence there is to make such confident claims.
+        <br><br>
+        Along our route today we came across what Myfanwy identified as Frost Worm tracks — I've never seen a Worm of this scale before, such large fissures and tunnels lining the mountain surface. From what I remember, there is something special to their carapace, either about how you could remove it to expose them effectively, or that it was dangerous to even get close. So long as we travel lightly we shouldn't have to find out.
+        <br><br>
+        As we continued, we noticed that within these tunnels there were whole thriving ecosystems — flora and fauna surviving in the tundra, making the tunnel openings their dens and homes. I so wanted to catalogue what was there, but the party insisted we press forward on the surface to make good time while the weather held.
+        <br><br>
+        While following behind Tagrin, I stepped right through the top of a tunnel and fell straight in! I barely had time to cling to the edge before I was pressed by a deluge of cold water. The tunnel almost seemed to function as a pipe of some sort, showing further evidence of a newly adapted and flourishing ecosystem with so many interesting fungi and even some rodents. Tagrin reached down with his long arms and dragged me out of the "pipe". It was extremely, uncomfortably cold! After drying off, we decided to set up camp and call it a day.
+        <br><br>
+        Aside from that slip up, it was a relatively fruitful yet uneventful day of travel.</div>
+      </div>
+    </div>
+
+    <div style="flex:0 0 8.3333%;height:100%;position:relative;display:flex;flex-direction:column;background-color:oklch(0.95 0.015 80);background-image:radial-gradient(circle at 6% 90%, oklch(0.5 0.08 50 / 0.11), transparent 46%), radial-gradient(circle at 92% 12%, oklch(0.55 0.07 40 / 0.1), transparent 42%);font-family:'EB Garamond',serif;color:oklch(0.24 0.03 40);">
+      <div style="position:absolute;inset:0;box-shadow:inset 0 0 200px oklch(0.35 0.05 45 / 0.28);pointer-events:none;"></div>
+      <div style="position:absolute;top:0;right:0;width:70px;height:70px;background:linear-gradient(135deg, oklch(0.88 0.02 75) 50%, oklch(0.78 0.03 60) 52%);box-shadow:-4px 4px 10px oklch(0.3 0.03 40 / 0.35);cursor:pointer;" onclick="goNext()"></div>
+      <div style="padding:70px 130px 0;">
+        <div style="display:flex;align-items:baseline;gap:24px;">
+          <div style="font-family:'Caveat',cursive;font-weight:700;font-size:50px;color:oklch(0.4 0.09 40);">Session 2 continued</div>
+          <div style="font-family:'Caveat',cursive;font-size:27px;color:oklch(0.45 0.06 45 / 0.75);">Entry 3 · Date: 3AM that same night</div>
+        </div>
+        <div style="width:240px;height:2px;background:oklch(0.35 0.05 40 / 0.5);transform:rotate(-0.4deg);margin:16px 0 0;"></div>
+      </div>
+      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px 130px 90px;">
+        <div style="font-size:28px;line-height:1.58;max-width:1550px;">So much for an uneventful evening! We were all yet again awoken by Orion with bad news. But this time it's a Worm with an "O", and one burrowing straight towards us! Myfanwy scrambled up a cliffside while Orion and Tagrin prepared to take flight; I clung to Orion's cold exterior as we all ascended. It suddenly stopped, as if waiting to strike — being that close to the surface you could feel the intense vibrations of its tremorsense even from several stories above the ground. We stayed as still as possible, but one twitch from Tagrin was all it took to set the beast off. The Frost Worm breaches.
+        <br><br>
+        Tagrin flies up higher, out of the Worm's reach while Myfanwy and I take potshots from our precarious perches but fail to pierce its carapace. Orion flies me to a nearby cliff edge and blares his sirens to capture its attention. With its maw now directed towards Orion, and inadvertently me, it unleashes a loud hypnotic trill — I couldn't take my eyes off of it, truly fascinating! That is, until Orion got in my way right as it exhaled a large blast of frost.
+        <br><br>
+        Tagrin began forming storm clouds along the ground and electrifying the Worm. Once properly settled on the cliff, I took aim at the frost gland in its gaping maw and struck true, exploiting its weakness to heat. Myfanwy wasn't so lucky, missing some shots and dropping from her perch to the surface. The Worm launched itself from the ground and slammed into the two of us before landing directly into one of Tagrin's conjured clouds.
+        <br><br>
+        Tagrin caused his storm clouds to flare up, shocking the Worm in its vulnerable position. I drew a bead to its eye and landed a solid hit in the soft connective flesh. Orion took the opportunity to separate, flying wide, but this time the Worm didn't take the bait, burrowing and biding its time. It emerged a few seconds later, where Myfanwy reactively landed a snapshot on it. The Worm then swallowed Orion whole — what an incredible spectacle! He later told me it was "mucus all the way down."
+        <br><br>
+        Tagrin once more excited his lightning clouds, essentially frying the Worm to death. Surprisingly, it let out a final blast of freezing blood in its death throes; luckily most of us were quick enough to evade the icy shrapnel.
+        <br><br>
+        We've made camp by some stonework within the tunnels, the rock suspiciously devoid of vegetation or fungal growth. Tagrin noted that the masonry seems to be of Jotunborn craftsmanship. As we settled down, quite a philosophical discussion occurred, but my reasons remain resolute: to see the world and experience it in a way that books cannot convey.</div>
+      </div>
+    </div>
+
+    <div style="flex:0 0 8.3333%;height:100%;position:relative;display:flex;flex-direction:column;background-color:oklch(0.95 0.015 80);background-image:radial-gradient(circle at 8% 88%, oklch(0.55 0.07 40 / 0.12), transparent 42%), radial-gradient(circle at 92% 10%, oklch(0.5 0.08 50 / 0.1), transparent 46%);font-family:'EB Garamond',serif;color:oklch(0.24 0.03 40);">
+      <div style="position:absolute;inset:0;box-shadow:inset 0 0 200px oklch(0.35 0.05 45 / 0.28);pointer-events:none;"></div>
+      <div style="position:absolute;top:0;right:0;width:70px;height:70px;background:linear-gradient(135deg, oklch(0.88 0.02 75) 50%, oklch(0.78 0.03 60) 52%);box-shadow:-4px 4px 10px oklch(0.3 0.03 40 / 0.35);cursor:pointer;" onclick="goNext()"></div>
+      <div style="padding:70px 130px 0;">
+        <div style="display:flex;align-items:baseline;gap:24px;">
+          <div style="font-family:'Caveat',cursive;font-weight:700;font-size:60px;color:oklch(0.4 0.09 40);">Session 3</div>
+          <div style="font-family:'Caveat',cursive;font-size:28px;color:oklch(0.45 0.06 45 / 0.75);">Entry 4, Part 1 · Date: ???</div>
+        </div>
+        <div style="width:240px;height:2px;background:oklch(0.35 0.05 40 / 0.5);transform:rotate(-0.4deg);margin:16px 0 0;"></div>
+      </div>
+      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px 130px 90px;">
+        <div style="font-size:29px;line-height:1.6;max-width:1550px;">This morning we weighed our options and decided to continue traveling in the tunnels — safer than braving the open air above where the Wyverns roam. We took a more direct route to make better time; regrettably, we don't have time for taking in the underground ecosystems as we have a job to do.
+        <br><br>
+        After several hours along the path, Tagrynn noticed some footprints implying a lone Taiga Giant has been traveling these tunnels, and recently too. The deeper in we got, the more visible structures we came across — cairns, even more intentional markings along the path, perhaps indicating a place of residence. It is odd to see these Jotun structures, as Taiga Giants are nomadic in nature. We come across a fork in the path, one supposedly leading to the den of the Giant and another avoiding it. Of course all of my grizzled companions wanted to take the path of least adventure.
+        <br><br>
+        Eventually we start coming up on some minor noble tombs! Finally we've reached the start of our mission. As we approach the entrance, Myfanwy nearly triggers a trap but I pull her back just in time. It's some kind of ray casting trap, with visible evidence that it has been set off before but is still intact. It's part of our job to make sure the traps are in working order so we left it alone. We avoided the chokepoint by climbing over a wall, and on the other side discovered evidence of recent tampering — someone had intentionally disabled a trap and taken a functional piece of it with them.
+        <br><br>
+        Tagrynn identified via a footprint that a Taiga Giant has been through here. Suspiciously no destruction was left in its 5 ton wake, as though it was being intentionally careful not to destroy the surrounding tombs and sarcophagi. We came upon another fork — one path led to an archway blocked with rubble, the other led outside through a destroyed wall that has since been tidied up thoughtfully. The Giant had obviously gone through the gaping hole, so our party decided to investigate the arch first.
+        <br><br>
+        As Tagrynn and Orion began clearing the rubble, Myfanwy kept watch and noticed a strange void down the archway as snow began to sweep in. I activated my Pearlescent Pyramid and had a look inside. I saw a veil of wind and made eye contact with a creature that slinked back once it realized I could see it — a Veiled Current, laying in wait to blast out or otherwise knock away intruders. There were additionally several small floating things, will-o-wisps but anatomically odd, with hands and fingers.
+        <br><br>
+        Soon after this Myfanwy sees the Taiga Giant we've been unintentionally pursuing and shouts to it in Jotun, inviting it to converse. He agreed to help us deal with the creatures in the tunnel in return for gaining access to the passages within. He has been living in the area for three years — unlike any Taiga Giant I've read about. He says he is cursed, and grew horns due to some deal he struck to save his group, but now travels alone. He is interestingly pacifistic, and wants to avoid damaging the structures because his ancestors built these tombs — though tragically, while built by Jotun, they were not built FOR Jotun. He fears the traps but still wishes to see the innermost chambers and worship the craftsmanship of his ancestors. He can see invisibility, which will certainly come in handy for the dangers to come.
+        <br><br>
+        As we cleared the rubble, the Wisp creatures started to attack us — an Ancient Wisp and two Void Gluttons. Tagrynn quickly casts a spell on the whole group, revealing their immunity to magic! Tagrynn then throws Orion, who hits one of the Wisps with his shield in passing. Orion begins knocking the Wisp and Gluttons to the ground to keep them busy. Myfanwy and I shoot at the grounded Glutton. Tagrynn casts moonlight ray at the Glutton, still affected by light-based spells, while Orion continues his onslaught of taunts and knockdowns. I dispel the first Glutton with a well aimed strike. The battle devolves to so many swipes at air — but I land two solid strikes against the Wisp. Myfanwy casts a moon beam on the remaining Glutton, ending it, then lands a snapshot towards the Wisp. It catches me off guard but Orion intercepts the blow. After his interception, Orion grabs hold of the Wisp, and I take a final shot and dissipate it.</div>
+      </div>
+    </div>
+
+    <div style="flex:0 0 8.3333%;height:100%;position:relative;display:flex;flex-direction:column;background-color:oklch(0.95 0.015 80);background-image:radial-gradient(circle at 88% 90%, oklch(0.55 0.07 40 / 0.12), transparent 42%), radial-gradient(circle at 10% 12%, oklch(0.5 0.08 50 / 0.1), transparent 46%);font-family:'EB Garamond',serif;color:oklch(0.24 0.03 40);">
+      <div style="position:absolute;inset:0;box-shadow:inset 0 0 200px oklch(0.35 0.05 45 / 0.28);pointer-events:none;"></div>
+      <div style="position:absolute;top:0;right:0;width:70px;height:70px;background:linear-gradient(135deg, oklch(0.88 0.02 75) 50%, oklch(0.78 0.03 60) 52%);box-shadow:-4px 4px 10px oklch(0.3 0.03 40 / 0.35);cursor:pointer;" onclick="goNext()"></div>
+      <div style="padding:70px 130px 0;">
+        <div style="display:flex;align-items:baseline;gap:24px;">
+          <div style="font-family:'Caveat',cursive;font-weight:700;font-size:62px;color:oklch(0.4 0.09 40);">Session 4</div>
+          <div style="font-family:'Caveat',cursive;font-size:29px;color:oklch(0.45 0.06 45 / 0.75);">Entry 4, Part 2 · Date: ???</div>
+        </div>
+        <div style="width:240px;height:2px;background:oklch(0.35 0.05 40 / 0.5);transform:rotate(-0.4deg);margin:16px 0 0;"></div>
+      </div>
+      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px 130px 90px;">
+        <div style="font-size:29px;line-height:1.6;max-width:1550px;">After resting, we ventured into a structure just beyond the rubble we cleared. Within this building, we found a book with a Dwarven face on its cover. It seemed to settle on a few specific pages due to wear and use. Between Tagrynn and I, we were able to decipher some of the multitude of languages of text on these pages, which appeared to be song lyrics — a few secular hymns that expanded on topics like respecting the mountains and weather, humbling yourself to them and not seeking to be above the power of the climate itself. Fascinating read, speaking volumes of the culture and usage of this particular tomb.
+        <br><br>
+        Beyond the book, there was a large gap, or rather hole, in the hallway that seemed to go down for quite some distance. Myfanwy, despite her age, is still our group's best climber. As such she did her best to cross the hole with some rope to secure the rest of our safe passage. But as she crossed, she was ambushed by the Veiled Current we saw earlier just before clearing the rubble! We were able to just make out its shape after it attempted to drag Myfanwy from the structure's walls, though she quickly recovered.
+        <br><br>
+        Tagrynn was first to jump to action against the invisible threat, activating his fiery aura. With somewhat of a shape still visible, I was able to land a decisive strike against it. In response, the Current screamed at Tagrynn but nothing seemed to happen. Myfanwy, despite the surprise of the ambush, was able to loose off two arrows at once and struck true against its ethereal form. Tagrynn then threw Orion across the gap, where Orion promptly followed up with a bash, dissipating the Veiled Current against the wall.
+        <br><br>
+        With the area secured, the rest of us caught up with Orion across the gap and continued the investigation. Myfanwy noticed that there was a damaged Taiga Giant statue that housed some kind of auditory trap. She said that the trick to disabling this type of trap was to either sing a song (no thank you!) or to attempt a sealing ritual. She stepped forward, triggering the trap, and was able to put the three singing spirits to rest. Our Taiga Giant companion, who we've learned goes by the name of Tyr, seemed to look at the statue in a puzzled way.
+        <br><br>
+        In the next room, we found some engraved text on the wall labeling it as the innermost room of this structure. The inhabitant of the single tomb in this room seems to be a non-royal but a person of interest to past nobility in some way. The text itself spoke to the complexity of choice and freedom. Both Orion and I were quite intrigued, convincing the rest of our party to let us open it.
+        <br><br>
+        Inside was some sort of body, seemingly neither dead nor alive. Its appearance was that of a female Jotunborn, though Tagrynn noticed that they lack the magic threads that run through normal Jotunborn. Orion, being a construct himself, noted that the body seemed to be pieced together artificially. The text "Fèin-riaghladh" was written along their spine. I assumed they may have been in some sort of induced sleep and reached for my emergency smelling salts, which failed to awaken them.
+        <br><br>
+        Upon seeing the body, Tyr's face flashed a range of emotions. At first, he challenged the morality of the construct's very existence, but soon relented after we promised to stand with him against it if necessary. Orion started tinkering with its internal mechanisms, investigating whether there was a way to activate it. After filling the body with his own vitality, it still lay dormant, seemingly missing its spark of life. Tyr tells us of the Breath of Giants, a story that a willing individual may have the power to will another creature to life by breathing their last breath into its mouth. After a long conversation, we agree to reseal the construct, and attempt to deal with it on our way out.</div>
+      </div>
+    </div>
+
+    <div style="flex:0 0 8.3333%;height:100%;position:relative;display:flex;flex-direction:column;background-color:oklch(0.95 0.015 80);background-image:radial-gradient(circle at 10% 90%, oklch(0.55 0.07 40 / 0.12), transparent 42%), radial-gradient(circle at 90% 8%, oklch(0.5 0.08 50 / 0.1), transparent 46%);font-family:'EB Garamond',serif;color:oklch(0.24 0.03 40);">
+      <div style="position:absolute;inset:0;box-shadow:inset 0 0 200px oklch(0.35 0.05 45 / 0.28);pointer-events:none;"></div>
+      <div style="position:absolute;top:0;right:0;width:70px;height:70px;background:linear-gradient(135deg, oklch(0.88 0.02 75) 50%, oklch(0.78 0.03 60) 52%);box-shadow:-4px 4px 10px oklch(0.3 0.03 40 / 0.35);cursor:pointer;" onclick="goNext()"></div>
+      <div style="padding:70px 130px 0;">
+        <div style="display:flex;align-items:baseline;gap:24px;">
+          <div style="font-family:'Caveat',cursive;font-weight:700;font-size:56px;color:oklch(0.4 0.09 40);">Session 5</div>
+          <div style="font-family:'Caveat',cursive;font-size:26px;color:oklch(0.45 0.06 45 / 0.75);">Entry 5 · Date: ???</div>
+        </div>
+        <div style="width:240px;height:2px;background:oklch(0.35 0.05 40 / 0.5);transform:rotate(-0.4deg);margin:16px 0 0;"></div>
+      </div>
+      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px 130px 90px;">
+        <div style="font-size:28px;line-height:1.58;max-width:1560px;">With things settled in the ruins, we headed outside to check our next path but found that a blizzard would soon be upon us. Tagrynn sent his bird ahead to check for nearby shelters, but came back with bad news — there is a Thunderbird flying overhead, and supposedly something bigger accompanying it. We decided to make camp in the ruins and wait for the blizzard to pass.
+        <br><br>
+        On further inspection of the songbook, we noticed that some of the early pages seemed grafted in from another, much older book, written in a language none of us recognize — seemingly a handwritten account of something. Orion, with his advanced height, spotted two glass beads in the eyes of the dwarven statue. Within them were images of a man, who Orion recognized to resemble the mortal form of Arodin. These beads may very well be artifacts created over 5000 years ago! Why they ended up as eyes in a Dwarven statue despite their depiction of a Human god is yet unknown to me.
+        <br><br>
+        By morning the storm had cleared, and all of our distinguishing tracks along with it. As we traveled up, we began to see signs of draconic activity — this may have been the companion of that Thunderbird we saw days prior, though based on the claw prints this Dragon was not too old to be a major threat. Soon enough, we happened upon the first of the three Dius'.
+        <br><br>
+        Fìor Shealladh is its name, which translates to True Sight in Azlanti. The Dius looked to be composed of a mass with concentric circles and a flat platform in the center, with some kind of Seraphim standing in the center. I asked the Seraphim whether there had been any disturbances within the Dius. It told me that it would help us deactivate the Dius if I took its hand. Myfanwy cautioned against it, intuiting that it would attempt to remove all of the senses of the person who approaches it. But what the Seraphim proposed was so intriguing that I couldn't help but step up.
+        <br><br>
+        As I started towards the Seraphim, I began to lose my sight, and then soon I fell deaf to my companions' guiding words. It felt as if I was cocooned in a void. Eventually I felt a hand and grasped it, allowing them to lead me in a new direction. While being led along, I experienced three visions. The first: a massive army stationed just outside of Opara, seemingly Taldor preparing for a war on a scale it has never seen before. The second: the Andoran port city of Augustana, being embargoed and barricaded by Chelliaxian warships. And the final: a lone man, draped in white robes accented with purple and green, dragging his staff along a large, frozen lake. Underneath the ice, a large indistinguishable figure is present. The man seemed to be drawing a sigil on the ice. As he completes the circle and a bright flash of light begins to push my presence away, he turns and looks to me.
+        <br><br>
+        As my senses return I find myself standing in the middle of the field, my party wholly engaged in battle with the dragon whom I assume the tracks from earlier belonged to. Myfanwy strikes the dragon, expunging her vindicator's mark, while Orion strikes well with his shield. Tyr lands two decisive blows on the dragon with his great spear. The dragon finally collapses as Tagrynn's aura of heat scorches it one last time. As we all recover, it seems that I've gained an innate true sight from the ordeal of the trial.
+        <br><br>
+        After resting for the night, we headed towards the next Dius, named Creideamh, after its ties to faith. The cryptic wording indicated that whoever stepped up would need to trust in their resolve and faith to pull through, and that physical harm would come to whomever takes on this burden. Orion volunteered, stepping up onto the platform. In this moment, it felt as though every fiber of my body called out to me to test Orion, and it seemed the rest of my party had the same compulsion. We all began striking at Orion with our weapons and spells. Under barrage, Orion eventually looked down and seemed to steel his resolve. He tossed his shield to the ground and raised his arms, as if to say "come and get me!" Myfanwy lands a final strike, and the trial ends just before Orion collapses to the ground.</div>
+      </div>
+    </div>
+
+    <div style="flex:0 0 8.3333%;height:100%;position:relative;display:flex;flex-direction:column;background-color:oklch(0.95 0.015 80);background-image:radial-gradient(circle at 90% 90%, oklch(0.55 0.07 40 / 0.12), transparent 42%), radial-gradient(circle at 8% 10%, oklch(0.5 0.08 50 / 0.1), transparent 46%);font-family:'EB Garamond',serif;color:oklch(0.24 0.03 40);">
+      <div style="position:absolute;inset:0;box-shadow:inset 0 0 200px oklch(0.35 0.05 45 / 0.28);pointer-events:none;"></div>
+      <div style="position:absolute;top:0;right:0;width:70px;height:70px;background:linear-gradient(135deg, oklch(0.88 0.02 75) 50%, oklch(0.78 0.03 60) 52%);box-shadow:-4px 4px 10px oklch(0.3 0.03 40 / 0.35);cursor:pointer;" onclick="goNext()"></div>
+      <div style="padding:70px 130px 0;">
+        <div style="display:flex;align-items:baseline;gap:24px;">
+          <div style="font-family:'Caveat',cursive;font-weight:700;font-size:56px;color:oklch(0.4 0.09 40);">Session 6</div>
+          <div style="font-family:'Caveat',cursive;font-size:26px;color:oklch(0.45 0.06 45 / 0.75);">Entry 6 · Date: ???</div>
+        </div>
+        <div style="width:240px;height:2px;background:oklch(0.35 0.05 40 / 0.5);transform:rotate(-0.4deg);margin:16px 0 0;"></div>
+      </div>
+      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px 130px 90px;">
+        <div style="font-size:28px;line-height:1.58;max-width:1560px;">It took several days of travel to reach the next Dius. Along the way I had an interesting conversation with Tagrynn who pointed out that people went to such great lengths to build this elaborate scenario. I was more interested in who those people are, and how these tasks speak to their character.
+        <br><br>
+        When we finally made it to the third Dius, we noticed a ring of runes around it, wearing away. After analysis I could tell there was some sort of divine spell embedded within them, but I couldn't tell its nature or potency given their condition. To test its efficacy, Orion picked up a nearby critter and tossed it across the runed threshold — it went limp, giving us much pause about the risk of entry.
+        <br><br>
+        I call out to the creature in the center, who declared themselves as the Belice of Taldan Loyalty. This Belice stated that those whose hearts stood with Taldor would be safe to enter. I took a cautious step in and was approached by the angel. It reached out and touched my forehead with a warm finger. Memories of my life in Taldor suddenly surface, the good and the bad. She searches for my true feelings about living in Taldor, finding many positive moments around the opportunities I've been afforded to live as I wish. After a cold shiver, she withdraws her hand, leaving a faintly glowing golden mark where contact was made — protection from many of the traps once we reach the main structure.
+        <br><br>
+        The first of my companions to step up is Myfanwy. She exclaimed that the fact that she's out here in the cold is proof enough of her loyalty to Taldor! Apparently her mind reflexively attempted to cover some of her feelings up as the angel looked around. Eventually she passes the test, with a begrudging angel signaling her away despite her attempts to conceal.
+        <br><br>
+        Up next was Orion, who focused his thoughts on traveling the world but always returning to Taldor as a bastion of resources — almost as if to call it home despite his vagrancy. This new perspective earns him his golden mark.
+        <br><br>
+        Tagrynn is next to go, resisting the touch. He attempted to hide all of his negative feelings about Taldan culture and its effects on the Jotunborn peoples, painting Taldor as a protector of his people. He succeeded at evading the gaze of the angel, earning the mark in turn.
+        <br><br>
+        Tyr approaches the newly branded party, and questions us before we encourage him to speak with the angel. She grants a different mark to him — one of cautious acceptance, which comes with a stipulation that he must remain within our presence or face a consequence.</div>
+      </div>
+    </div>
+
+    <div style="flex:0 0 8.3333%;height:100%;position:relative;display:flex;flex-direction:column;background-color:oklch(0.95 0.015 80);background-image:radial-gradient(circle at 90% 90%, oklch(0.55 0.07 40 / 0.12), transparent 42%), radial-gradient(circle at 8% 10%, oklch(0.5 0.08 50 / 0.1), transparent 46%);font-family:'EB Garamond',serif;color:oklch(0.24 0.03 40);">
+      <div style="position:absolute;inset:0;box-shadow:inset 0 0 200px oklch(0.35 0.05 45 / 0.28);pointer-events:none;"></div>
+      <div style="position:absolute;top:0;right:0;width:70px;height:70px;background:linear-gradient(135deg, oklch(0.88 0.02 75) 50%, oklch(0.78 0.03 60) 52%);box-shadow:-4px 4px 10px oklch(0.3 0.03 40 / 0.35);cursor:pointer;" onclick="goNext()"></div>
+      <div style="padding:70px 130px 0;">
+        <div style="display:flex;align-items:baseline;gap:24px;">
+          <div style="font-family:'Caveat',cursive;font-weight:700;font-size:50px;color:oklch(0.4 0.09 40);">Session 6 continued</div>
+          <div style="font-family:'Caveat',cursive;font-size:26px;color:oklch(0.45 0.06 45 / 0.75);">Entry 7, Part 1 · Date: ???</div>
+        </div>
+        <div style="width:240px;height:2px;background:oklch(0.35 0.05 40 / 0.5);transform:rotate(-0.4deg);margin:16px 0 0;"></div>
+      </div>
+      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px 130px 90px;">
+        <div style="font-size:28px;line-height:1.58;max-width:1560px;">The next few days of travel go quickly. We come across a cave entrance guarded by two Fallen Champions. I sent Watson to distract the guards, but they didn't take the bait, so Tagrynn had his Snowfeather attempt to capture their attention instead. One of the guards casts harm on Snowfeather, causing it to flee back to Tagrynn, and the two guards to pursue it in turn.
+        <br><br>
+        Once the Champions enter the cave, Tagrynn attempts to strike one with a moon beam but barely misses. Myfanwy and I break from our hiding places, each striking one of the Champions. In retaliation, the Champion strikes Myfanwy back, sapping her hope and inflicting fear on her. Orion bashes the other Champion to the ground and taunts it to keep it locked down. Tagrynn casts lightning bolt on this Champion, while Myfanwy repositions and strikes the other. I landed a decisive strike to the throat of the Champion that was aggressing Myfanwy, preventing it from casting any more spells. Tagrynn casts a tempest surge at one Champion while Myfanwy shoots a pair of arrows into the eyes of the other, striking them both down permanently.</div>
+      </div>
+    </div>
+
+    <div style="flex:0 0 8.3333%;height:100%;position:relative;display:flex;flex-direction:column;background-color:oklch(0.95 0.015 80);background-image:radial-gradient(circle at 8% 88%, oklch(0.55 0.07 40 / 0.12), transparent 42%), radial-gradient(circle at 92% 10%, oklch(0.5 0.08 50 / 0.1), transparent 46%);font-family:'EB Garamond',serif;color:oklch(0.24 0.03 40);">
+      <div style="position:absolute;inset:0;box-shadow:inset 0 0 200px oklch(0.35 0.05 45 / 0.28);pointer-events:none;"></div>
+      <div style="position:absolute;top:0;right:0;width:70px;height:70px;background:linear-gradient(135deg, oklch(0.88 0.02 75) 50%, oklch(0.78 0.03 60) 52%);box-shadow:-4px 4px 10px oklch(0.3 0.03 40 / 0.35);cursor:pointer;" onclick="goNext()"></div>
+      <div style="padding:70px 130px 0;">
+        <div style="display:flex;align-items:baseline;gap:24px;">
+          <div style="font-family:'Caveat',cursive;font-weight:700;font-size:56px;color:oklch(0.4 0.09 40);">Session 7</div>
+          <div style="font-family:'Caveat',cursive;font-size:26px;color:oklch(0.45 0.06 45 / 0.75);">Entry 7, Part 2 · Date: ???</div>
+        </div>
+        <div style="width:240px;height:2px;background:oklch(0.35 0.05 40 / 0.5);transform:rotate(-0.4deg);margin:16px 0 0;"></div>
+      </div>
+      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px 130px 90px;">
+        <div style="font-size:28px;line-height:1.58;max-width:1560px;">We took the time to heal up before properly scoping out the room the Fallen Champions had been guarding. A few pressure plates sat waiting beneath the dust, clearly primed, though our golden marks would protect us against them. In the end, the room yielded nothing of particular value.
+        <br><br>
+        We descended a set of stairs and, before we'd gotten very far, caught the sound of voices below in a language none of us could place. Whatever was down there, it had far too many teeth by the sound of it, and seemed to be locked in some manner of argument with something else entirely. Orion, whose unique physiology causes the concept of subtlety to remain beyond his reach, walked into the hall and immediately drew the attention of every devil within earshot.
+        <br><br>
+        An Aranya wasted no time unleashing something foul that struck the whole party and left only me sickened. Myfanwy answered in kind, marking the creature with a holy spell before the rest of the room descended into chaos. A Godclaw Hellcrown came barreling toward us with startling speed, while Orion ran directly into the middle of it all and began taunting every last one of them at once. A Slaver Demon opened a dimension door and appeared beside Tagrynn, though its strike went wide. I managed a critical hit against the same demon, though the satisfaction was undercut by the fact that I promptly threw up afterward, courtesy of the Aranya's earlier handiwork. A Barbed Devil closed on Orion and missed its swing, and Tagrynn answered with an Electric Arc that caught both the Slaver Demon and the Godclaw.
+        <br><br>
+        The Aranya pressed the attack on Orion next, her flaming sword swinging wide, and Orion promptly disarmed her for the trouble. Myfanwy cast Vindicator's Judgment on the Aranya before landing a critical strike of her own. The Godclaw lashed out at me and very nearly connected, while Orion tripped the Barbed Devil, recentered himself, and returned to taunting anything still standing. The Slaver Demon struck Tagrynn and muttered something at the rest of us that we couldn't understand, though I doubt it was a compliment. I took a moment to properly identify both the Godclaw and the Slaver Demon, striking the latter before stepping clear of the former.
+        <br><br>
+        The Aranya took to the air and flanked Myfanwy alongside the Godclaw, catching her with a solid blow from her greatsword. Myfanwy cast Vindicator's Judgment on her a second time and struck her twice in answer. The Godclaw attempted a spell of its own, only for Myfanwy to critically interrupt it before it could take shape. The Slaver Demon made a bid to dominate Orion and failed, turning instead to strike at Myfanwy, only for Orion to intercept the blow meant for her. With the Slaver Demon now facing Orion, I finally landed the strike that finished it. Tagrynn moved into position to unleash a Powerful Inhalation that silenced the Godclaw and killed the Aranya outright.
+        <br><br>
+        The Godclaw approached Tagrynn with another spell forming, only to be critically and permanently silenced by Myfanwy before it could finish. Orion charged the Barbed Devil, failed to trip it, and settled for taunting it instead. It answered with a critical strike against Orion, one he managed to block, though not without being left bleeding rather badly. Tagrynn layered an Electric Arc and an Elemental Strike onto the Barbed Devil in turn.
+        <br><br>
+        Myfanwy struck the Barbed Devil twice more, and Orion tripped it again before stepping back to resume his taunting. I landed another hit with a hampering shot. The Barbed Devil hauled itself up from the ground and began retreating up the stairs, evidently having had enough of us. Tagrynn closed the distance with a Lightning Dash to cut off its escape, and Myfanwy chased it up the stairs, taking a final hit from the Barbed Devil before striking it down for good. With the hall finally quiet, we allowed ourselves a moment to catch our breath before pressing on.</div>
+      </div>
+    </div>
+
+    <div style="flex:0 0 8.3333%;height:100%;position:relative;display:flex;flex-direction:column;background-color:oklch(0.95 0.015 80);background-image:radial-gradient(circle at 90% 90%, oklch(0.55 0.07 40 / 0.12), transparent 42%), radial-gradient(circle at 8% 8%, oklch(0.5 0.08 50 / 0.1), transparent 46%);font-family:'EB Garamond',serif;color:oklch(0.24 0.03 40);">
+      <div style="position:absolute;inset:0;box-shadow:inset 0 0 200px oklch(0.35 0.05 45 / 0.28);pointer-events:none;"></div>
+      <div style="position:absolute;top:0;right:0;width:70px;height:70px;background:linear-gradient(135deg, oklch(0.88 0.02 75) 50%, oklch(0.78 0.03 60) 52%);box-shadow:-4px 4px 10px oklch(0.3 0.03 40 / 0.35);cursor:pointer;" onclick="goNext()"></div>
+      <div style="padding:70px 130px 0;">
+        <div style="display:flex;align-items:baseline;gap:24px;">
+          <div style="font-family:'Caveat',cursive;font-weight:700;font-size:56px;color:oklch(0.4 0.09 40);">Session 8</div>
+          <div style="font-family:'Caveat',cursive;font-size:26px;color:oklch(0.45 0.06 45 / 0.75);">Entry 7, Part 3 · Date: ???</div>
+        </div>
+        <div style="width:240px;height:2px;background:oklch(0.35 0.05 40 / 0.5);transform:rotate(-0.4deg);margin:16px 0 0;"></div>
+      </div>
+      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px 130px 90px;">
+        <div style="font-size:28px;line-height:1.58;max-width:1560px;">With the last of the devils finally silenced, we allowed ourselves a proper moment to recover. Tagrynn went about tending to the worst of our wounds, while Orion turned his attention to his shield, hammering out a dent that had clearly seen better days. I took the opportunity to redistribute what remained of our purchased supplies, doling out the last of our life elixirs and a small hoard of quickness potions.
+        <br><br>
+        It was in the middle of this light commotion that I caught a strange banging sound drifting up from the hallway ahead. Meanwhile, Myfanwy had taken it upon herself to search the possessions of the fallen demons, and turned up a crumpled note that proved illuminating. Whoever penned it revealed their contempt for the current trade agreement between Taldor and Cheliax, and referenced a captive creature being held somewhere nearby, along with cryptic mention of something they called a "war machine." This made me think of Orion, and then of the automaton we previously discovered in the unmarked crypt.
+        <br><br>
+        Further along, we came upon a crevice that opened out to the weather beyond, its edges scored with the unmistakable signs of a large creature having passed through recently. On the opposite side of the hall sat a secret door, one I found to be laced with a magical ward I couldn't begin to translate, though I could tell well enough what it intended to do: purge whatever lay beyond it entirely, us included, should we be foolish enough to trip it. We agreed this was a problem best left for after we'd cleared everything else.
+        <br><br>
+        Pressing on, the hallway looped us back around, rather unhelpfully, to that very same warded door. I knelt to work the mundane lock beneath the ward, and had very nearly gotten the door open when I noticed something else layered atop the existing enchantment: a slow, syrupy distortion in the air itself, as if time inside that room had decided to take its own leisurely pace. I withdrew my hand rather more quickly than I'd extended it. That caution proved well-founded, as no sooner had I stepped back than several new threats came pouring out from deeper within the hold.
+        <br><br>
+        A Nightmare, wreathed in an oily black smoke that clung to the air around it, surged forward and sank its teeth into Myfanwy before any of us could properly react. Its rider was close behind, binding her in some manner of dark contract that left magical wounds blooming across her skin, before turning his attention outward and hurling a fireball into the rest of the party. Orion strode to Myfanwy's side, taunting the encroaching pack toward himself before pausing to see to her wounds. One of the two Hellhounds tumbled straight through Tagrynn's legs in an attempt to reach Myfanwy, only to find Orion had already intercepted it. Tyr closed in and drove his great spear into the unseated rider.
+        <br><br>
+        The Nightmare surged toward Tagrynn and erupted in flame, catching both him and Orion in the blast. Myfanwy activated her quiver, blessing her arrows with Silver, before marking and striking the rider once more. Tagrynn cast a Powerful Inhalation that drew the breath from every enemy in the room at once, and Tyr followed with a mighty exhale of his own, scattering the smoky aura still clinging to the Nightmare.
+        <br><br>
+        Myfanwy's arrow found the rider and silenced him for good. The Nightmare itself lashed out at Orion with tooth and hoof both; Orion, characteristically unbothered, simply re-taunted. Tagrynn finished the first Hellhound off with a crackling Electric Arc, while Tyr landed a critical strike against the Nightmare before locking it in a grapple it could not break free of no matter how it struggled. With the Nightmare pinned, Orion moved in to finish the remaining Hellhound, and Myfanwy delivered the killing blow moments later. What remained of the Nightmare fell to the rest of us shortly after.</div>
+      </div>
+    </div>
+
+    <div style="flex:0 0 8.3333%;height:100%;position:relative;display:flex;flex-direction:column;background-color:oklch(0.95 0.015 80);background-image:radial-gradient(circle at 10% 90%, oklch(0.55 0.07 40 / 0.12), transparent 42%), radial-gradient(circle at 90% 10%, oklch(0.5 0.08 50 / 0.1), transparent 46%);font-family:'EB Garamond',serif;color:oklch(0.24 0.03 40);">
+      <div style="position:absolute;inset:0;box-shadow:inset 0 0 200px oklch(0.35 0.05 45 / 0.28);pointer-events:none;"></div>
+      <div style="position:absolute;top:0;right:0;width:70px;height:70px;background:linear-gradient(135deg, oklch(0.88 0.02 75) 50%, oklch(0.78 0.03 60) 52%);box-shadow:-4px 4px 10px oklch(0.3 0.03 40 / 0.35);"></div>
+      <div style="padding:90px 150px 0;">
+        <div style="display:flex;align-items:baseline;gap:28px;">
+          <div style="font-family:'Caveat',cursive;font-weight:700;font-size:76px;color:oklch(0.4 0.09 40);">Session 9</div>
+          <div style="font-family:'Caveat',cursive;font-size:33px;color:oklch(0.45 0.06 45 / 0.75);">Entry 7, Part 4 · Date: ???</div>
+        </div>
+        <div style="width:260px;height:2px;background:oklch(0.35 0.05 40 / 0.5);transform:rotate(-0.4deg);margin:18px 0 0;"></div>
+      </div>
+      <div style="flex:1;min-height:0;overflow-y:auto;padding:40px 150px 100px;">
+        <div style="font-size:32px;line-height:1.6;max-width:1500px;">We took what time we could to heal before returning to the main hallway to continue our investigation. It wasn't long before we sensed something magical humming behind a nearby door, and Myfanwy confirmed it was trapped before any of us got too close. I attempted to disarm it, and failed rather spectacularly. The trap triggered in response, searing me with a burn that felt as though it were trying to claw at something far more personal than my skin.
+        <br><br>
+        Beyond the door came a foul smell along with the faint, rhythmic sound of something heavy being dragged across stone. Orion, in his forward position, was first to catch sight of the creature within, and described it to me in enough detail that I could place it immediately: an adult Omen Dragon. Legendary in stature, and likely the very creature the note we found had referenced as being held captive.
+        <br><br>
+        Orion's first instinct, predictably, was to charge in and end the thing before it could pose a threat. It took some convincing to get him to hold off long enough for us to talk first. I called out in the Fey tongue, asking whether it was being held against its will to produce predictions for its diabolic captors, but it could offer no answer, its jaw seemingly bound shut. I let it know, as best I could, that we meant it no harm, and we stepped inside.
+        <br><br>
+        Orion entered first, finding himself in a large hall lined with statues. The dragon's mouth was bound tight, one of its wings hanging limp and useless at its side. A second figure occupied the room as well, wearing what seemed to be a skull-faced mask, holding a staff in one hand and some manner of wiry, ethereal cage in the other.
+        <br><br>
+        I called out to him in Diabolic, demanding to know his business here.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="position:fixed;left:0;right:0;bottom:0;height:64px;display:flex;align-items:center;justify-content:center;gap:clamp(16px,3vw,44px);background:linear-gradient(0deg, oklch(0.12 0.01 40 / 0.82), oklch(0.12 0.01 40 / 0));z-index:10;padding:0 12px;">
+    <div id="prevBtn" style="font-family:'Caveat',cursive;font-size:clamp(18px,2.4vw,28px);white-space:nowrap;color:oklch(0.85 0.03 75);cursor:pointer;user-select:none;opacity:0.25;" onclick="goPrev()">&#8249; back</div>
+    <div style="font-family:'Caveat',cursive;font-size:clamp(15px,2vw,24px);white-space:nowrap;color:oklch(0.7 0.03 70 / 0.85);letter-spacing:1px;">page <span id="pageNum">1</span> of 12</div>
+    <div id="nextBtn" style="font-family:'Caveat',cursive;font-size:clamp(18px,2.4vw,28px);white-space:nowrap;color:oklch(0.85 0.03 75);cursor:pointer;user-select:none;opacity:0.9;" onclick="goNext()">turn page &#8250;</div>
+  </div>
+</div>
+
+
+
+<script>
+  var idx = 0;
+  var total = 12;
+  function render() {
+    document.getElementById('track').style.transform = 'translateX(-' + (idx * (100 / 12)) + '%)';
+    document.getElementById('pageNum').textContent = idx + 1;
+    document.getElementById('prevBtn').style.opacity = idx === 0 ? 0.25 : 0.9;
+    document.getElementById('nextBtn').style.opacity = idx === total - 1 ? 0.25 : 0.9;
+  }
+  function goNext() { idx = Math.min(idx + 1, total - 1); render(); }
+  function goPrev() { idx = Math.max(idx - 1, 0); render(); }
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowRight') goNext();
+    if (e.key === 'ArrowLeft') goPrev();
+  });
+</script>
+</body>
+</html>
