@@ -12,7 +12,7 @@
   html,body{margin:0;height:100%;box-sizing:border-box;}
   *{box-sizing:border-box;}
 </style>
-<div style="position:relative;width:100vw;height:100vh;overflow:hidden;background:oklch(0.16 0.015 45);perspective:2600px;">
+<div id="journalContainer" style="position:relative;width:100vw;height:100vh;overflow:hidden;background:oklch(0.16 0.015 45);perspective:2600px;touch-action:pan-y;">
   <div style="position:relative;width:100%;height:100%;">
 
     <div id="jp0" style="position:absolute;inset:0;height:100%;overflow:hidden;background:oklch(0.2 0.02 50);cursor:pointer;transform-style:preserve-3d;backface-visibility:hidden;transform-origin:center center;transition:none;transform:rotateY(0deg);opacity:1;z-index:5;visibility:visible;" onclick="goNext()">
@@ -33,14 +33,14 @@
     <div id="jp1" style="position:absolute;inset:0;height:100%;transform-style:preserve-3d;backface-visibility:hidden;transform-origin:center center;transition:none;transform:rotateY(0deg);opacity:1;z-index:0;visibility:hidden;display:flex;flex-direction:column;background-color:oklch(0.95 0.015 80);background-image:radial-gradient(circle at 8% 10%, oklch(0.55 0.07 40 / 0.12), transparent 42%), radial-gradient(circle at 94% 88%, oklch(0.5 0.08 50 / 0.10), transparent 46%), radial-gradient(circle at 82% 12%, oklch(0.6 0.05 90 / 0.10), transparent 35%);font-family:'EB Garamond',serif;color:oklch(0.24 0.03 40);">
       <div style="position:absolute;inset:0;box-shadow:inset 0 0 200px oklch(0.35 0.05 45 / 0.28);pointer-events:none;"></div>
       <div style="position:absolute;top:0;right:0;width:70px;height:70px;background:linear-gradient(135deg, oklch(0.88 0.02 75) 50%, oklch(0.78 0.03 60) 52%);box-shadow:-4px 4px 10px oklch(0.3 0.03 40 / 0.35);cursor:pointer;" onclick="goNext()"></div>
-      <div style="padding:70px 130px 0;">
+      <div style="padding:70px clamp(28px,6vw,130px) 0;">
         <div style="display:flex;align-items:flex-end;justify-content:space-between;">
           <div style="font-family:'Caveat',cursive;font-weight:700;font-size:62px;color:oklch(0.4 0.09 40);">Entry 1</div>
           <div style="font-family:'Caveat',cursive;font-size:26px;color:oklch(0.45 0.06 45 / 0.6);transform:rotate(-2deg);">Session 1</div>
         </div>
         <div style="width:240px;height:2px;background:oklch(0.35 0.05 40 / 0.5);transform:rotate(-0.4deg);margin:16px 0 0;"></div>
       </div>
-      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px 130px 150px;">
+      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px clamp(28px,6vw,130px) 150px;">
         <div style="font-size:29px;line-height:1.6;max-width:1550px;">We officially started our ascent up the mountains today, and the weather has taken a dramatic turn. It certainly slipped my mind that the cold weather must be accounted for, and indeed it slipped my feet too! While navigating some natural stairs, I discovered a rather icy patch and had a bit of a nasty fall. While I recovered, I could make out the sounds of exertion of Myfanwy in the ravine below. I thought she was scouting ahead, but as it would happen, she tripped some sort of trap and was waylaid quite far from us. Our mountain guide, a Jotunborn who supposedly goes by the name Tagrin, had us well on our way up the mountain pass with the aid of his primal skills. But none could have predicted what would happen to Orion. I can't even say that I know what happened, and it occurred not but 30 feet ahead of me. What I do know is that after he fell from that narrow path, we were no longer alone.
         <br><br>
         We found ourselves suddenly ambushed in the epicenter of a coven of wintery witches — Hags, to be precise. These Hags were not alone either, and all too soon from the low cloud cover several swarms of chilling fey emerged. They descended upon us, though mostly Orion as he blared his alarm in quite an obnoxious way. Even as they remained focused on him, the air temperature dropped rapidly and quite severely.
@@ -64,14 +64,14 @@
     <div id="jp2" style="position:absolute;inset:0;height:100%;transform-style:preserve-3d;backface-visibility:hidden;transform-origin:center center;transition:none;transform:rotateY(0deg);opacity:1;z-index:0;visibility:hidden;display:flex;flex-direction:column;background-color:oklch(0.95 0.015 80);background-image:radial-gradient(circle at 90% 8%, oklch(0.55 0.07 40 / 0.12), transparent 42%), radial-gradient(circle at 6% 90%, oklch(0.5 0.08 50 / 0.11), transparent 46%), radial-gradient(circle at 20% 20%, oklch(0.6 0.05 90 / 0.08), transparent 35%);font-family:'EB Garamond',serif;color:oklch(0.24 0.03 40);">
       <div style="position:absolute;inset:0;box-shadow:inset 0 0 200px oklch(0.35 0.05 45 / 0.28);pointer-events:none;"></div>
       <div style="position:absolute;top:0;right:0;width:70px;height:70px;background:linear-gradient(135deg, oklch(0.88 0.02 75) 50%, oklch(0.78 0.03 60) 52%);box-shadow:-4px 4px 10px oklch(0.3 0.03 40 / 0.35);cursor:pointer;" onclick="goNext()"></div>
-      <div style="padding:70px 130px 0;">
+      <div style="padding:70px clamp(28px,6vw,130px) 0;">
         <div style="display:flex;align-items:flex-end;justify-content:space-between;">
           <div style="font-family:'Caveat',cursive;font-weight:700;font-size:58px;color:oklch(0.4 0.09 40);">Entry 2</div>
           <div style="font-family:'Caveat',cursive;font-size:26px;color:oklch(0.45 0.06 45 / 0.6);transform:rotate(-2deg);">Session 2</div>
         </div>
         <div style="width:240px;height:2px;background:oklch(0.35 0.05 40 / 0.5);transform:rotate(-0.4deg);margin:16px 0 0;"></div>
       </div>
-      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px 130px 150px;">
+      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px clamp(28px,6vw,130px) 150px;">
         <div style="font-size:28px;line-height:1.58;max-width:1550px;">I awoke to slightly alarming news from Orion that overnight he heard what he assumed to be a Wyrm flapping overhead, apparently eating the bodies of the Hags we had dispatched yesterday. I did not know that Hags were included in the diet of Wyrms, but I suppose in these climes anything will do.
         <br><br>
         After leaving the tent, I notice Tagrin staring up at the sky for much longer than would seem useful. After some time he proclaimed that today would be a good travel day. I must ask him what observable evidence there is to make such confident claims.
@@ -89,7 +89,7 @@
     <div id="jp3" style="position:absolute;inset:0;height:100%;transform-style:preserve-3d;backface-visibility:hidden;transform-origin:center center;transition:none;transform:rotateY(0deg);opacity:1;z-index:0;visibility:hidden;display:flex;flex-direction:column;background-color:oklch(0.95 0.015 80);background-image:radial-gradient(circle at 6% 90%, oklch(0.5 0.08 50 / 0.11), transparent 46%), radial-gradient(circle at 92% 12%, oklch(0.55 0.07 40 / 0.1), transparent 42%);font-family:'EB Garamond',serif;color:oklch(0.24 0.03 40);">
       <div style="position:absolute;inset:0;box-shadow:inset 0 0 200px oklch(0.35 0.05 45 / 0.28);pointer-events:none;"></div>
       <div style="position:absolute;top:0;right:0;width:70px;height:70px;background:linear-gradient(135deg, oklch(0.88 0.02 75) 50%, oklch(0.78 0.03 60) 52%);box-shadow:-4px 4px 10px oklch(0.3 0.03 40 / 0.35);cursor:pointer;" onclick="goNext()"></div>
-      <div style="padding:70px 130px 0;">
+      <div style="padding:70px clamp(28px,6vw,130px) 0;">
         <div style="display:flex;align-items:flex-end;justify-content:space-between;">
           <div style="display:flex;align-items:baseline;gap:20px;">
             <div style="font-family:'Caveat',cursive;font-weight:700;font-size:58px;color:oklch(0.4 0.09 40);">Entry 3</div>
@@ -99,7 +99,7 @@
         </div>
         <div style="width:240px;height:2px;background:oklch(0.35 0.05 40 / 0.5);transform:rotate(-0.4deg);margin:16px 0 0;"></div>
       </div>
-      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px 130px 150px;">
+      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px clamp(28px,6vw,130px) 150px;">
         <div style="font-size:28px;line-height:1.58;max-width:1550px;">So much for an uneventful evening!
         <br><br>
         We were all yet again awoken by Orion with bad news. But this time it's a Worm with an "O", and one burrowing straight towards us! Myfanwy scrambled up a cliffside while Orion and Tagrin prepared to take flight; I clung to Orion's cold exterior as we all ascended. It suddenly stopped, as if waiting to strike — being that close to the surface you could feel the intense vibrations of its tremorsense even from several stories above the ground. We stayed as still as possible, but one twitch from Tagrin was all it took to set the beast off. The Frost Worm breaches.
@@ -123,7 +123,7 @@
     <div id="jp4" style="position:absolute;inset:0;height:100%;transform-style:preserve-3d;backface-visibility:hidden;transform-origin:center center;transition:none;transform:rotateY(0deg);opacity:1;z-index:0;visibility:hidden;display:flex;flex-direction:column;background-color:oklch(0.95 0.015 80);background-image:radial-gradient(circle at 8% 88%, oklch(0.55 0.07 40 / 0.12), transparent 42%), radial-gradient(circle at 92% 10%, oklch(0.5 0.08 50 / 0.1), transparent 46%);font-family:'EB Garamond',serif;color:oklch(0.24 0.03 40);">
       <div style="position:absolute;inset:0;box-shadow:inset 0 0 200px oklch(0.35 0.05 45 / 0.28);pointer-events:none;"></div>
       <div style="position:absolute;top:0;right:0;width:70px;height:70px;background:linear-gradient(135deg, oklch(0.88 0.02 75) 50%, oklch(0.78 0.03 60) 52%);box-shadow:-4px 4px 10px oklch(0.3 0.03 40 / 0.35);cursor:pointer;" onclick="goNext()"></div>
-      <div style="padding:70px 130px 0;">
+      <div style="padding:70px clamp(28px,6vw,130px) 0;">
         <div style="display:flex;align-items:flex-end;justify-content:space-between;">
           <div style="display:flex;align-items:baseline;gap:20px;">
             <div style="font-family:'Caveat',cursive;font-weight:700;font-size:60px;color:oklch(0.4 0.09 40);">Entry 4</div>
@@ -133,7 +133,7 @@
         </div>
         <div style="width:240px;height:2px;background:oklch(0.35 0.05 40 / 0.5);transform:rotate(-0.4deg);margin:16px 0 0;"></div>
       </div>
-      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px 130px 150px;">
+      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px clamp(28px,6vw,130px) 150px;">
         <div style="font-size:29px;line-height:1.6;max-width:1550px;">This morning we weighed our options and decided to continue traveling in the tunnels — safer than braving the open air above where the Wyverns roam. We took a more direct route to make better time; regrettably, we don't have time for taking in the underground ecosystems as we have a job to do.
         <br><br>
         After several hours along the path, Tagrynn noticed some footprints implying a lone Taiga Giant has been traveling these tunnels, and recently too. The deeper in we got, the more visible structures we came across — cairns, even more intentional markings along the path, perhaps indicating a place of residence. It is odd to see these Jotun structures, as Taiga Giants are nomadic in nature. We come across a fork in the path, one supposedly leading to the den of the Giant and another avoiding it. Of course all of my grizzled companions wanted to take the path of least adventure.
@@ -159,7 +159,7 @@
     <div id="jp5" style="position:absolute;inset:0;height:100%;transform-style:preserve-3d;backface-visibility:hidden;transform-origin:center center;transition:none;transform:rotateY(0deg);opacity:1;z-index:0;visibility:hidden;display:flex;flex-direction:column;background-color:oklch(0.95 0.015 80);background-image:radial-gradient(circle at 88% 90%, oklch(0.55 0.07 40 / 0.12), transparent 42%), radial-gradient(circle at 10% 12%, oklch(0.5 0.08 50 / 0.1), transparent 46%);font-family:'EB Garamond',serif;color:oklch(0.24 0.03 40);">
       <div style="position:absolute;inset:0;box-shadow:inset 0 0 200px oklch(0.35 0.05 45 / 0.28);pointer-events:none;"></div>
       <div style="position:absolute;top:0;right:0;width:70px;height:70px;background:linear-gradient(135deg, oklch(0.88 0.02 75) 50%, oklch(0.78 0.03 60) 52%);box-shadow:-4px 4px 10px oklch(0.3 0.03 40 / 0.35);cursor:pointer;" onclick="goNext()"></div>
-      <div style="padding:70px 130px 0;">
+      <div style="padding:70px clamp(28px,6vw,130px) 0;">
         <div style="display:flex;align-items:flex-end;justify-content:space-between;">
           <div style="display:flex;align-items:baseline;gap:20px;">
             <div style="font-family:'Caveat',cursive;font-weight:700;font-size:62px;color:oklch(0.4 0.09 40);">Entry 4</div>
@@ -169,7 +169,7 @@
         </div>
         <div style="width:240px;height:2px;background:oklch(0.35 0.05 40 / 0.5);transform:rotate(-0.4deg);margin:16px 0 0;"></div>
       </div>
-      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px 130px 150px;">
+      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px clamp(28px,6vw,130px) 150px;">
         <div style="font-size:29px;line-height:1.6;max-width:1550px;">After resting, we ventured into a structure just beyond the rubble we cleared. Within this building, we found a book with a Dwarven face on its cover. It seemed to settle on a few specific pages due to wear and use. Between Tagrynn and I, we were able to decipher some of the multitude of languages of text on these pages, which appeared to be song lyrics — a few secular hymns that expanded on topics like respecting the mountains and weather, humbling yourself to them and not seeking to be above the power of the climate itself. Fascinating read, speaking volumes of the culture and usage of this particular tomb.
         <br><br>
         Beyond the book, there was a large gap, or rather hole, in the hallway that seemed to go down for quite some distance. Myfanwy, despite her age, is still our group's best climber. As such she did her best to cross the hole with some rope to secure the rest of our safe passage. But as she crossed, she was ambushed by the Veiled Current we saw earlier just before clearing the rubble! We were able to just make out its shape after it attempted to drag Myfanwy from the structure's walls, though she quickly recovered.
@@ -191,14 +191,14 @@
     <div id="jp6" style="position:absolute;inset:0;height:100%;transform-style:preserve-3d;backface-visibility:hidden;transform-origin:center center;transition:none;transform:rotateY(0deg);opacity:1;z-index:0;visibility:hidden;display:flex;flex-direction:column;background-color:oklch(0.95 0.015 80);background-image:radial-gradient(circle at 10% 90%, oklch(0.55 0.07 40 / 0.12), transparent 42%), radial-gradient(circle at 90% 8%, oklch(0.5 0.08 50 / 0.1), transparent 46%);font-family:'EB Garamond',serif;color:oklch(0.24 0.03 40);">
       <div style="position:absolute;inset:0;box-shadow:inset 0 0 200px oklch(0.35 0.05 45 / 0.28);pointer-events:none;"></div>
       <div style="position:absolute;top:0;right:0;width:70px;height:70px;background:linear-gradient(135deg, oklch(0.88 0.02 75) 50%, oklch(0.78 0.03 60) 52%);box-shadow:-4px 4px 10px oklch(0.3 0.03 40 / 0.35);cursor:pointer;" onclick="goNext()"></div>
-      <div style="padding:70px 130px 0;">
+      <div style="padding:70px clamp(28px,6vw,130px) 0;">
         <div style="display:flex;align-items:flex-end;justify-content:space-between;">
           <div style="font-family:'Caveat',cursive;font-weight:700;font-size:56px;color:oklch(0.4 0.09 40);">Entry 5</div>
           <div style="font-family:'Caveat',cursive;font-size:26px;color:oklch(0.45 0.06 45 / 0.6);transform:rotate(-2deg);">Session 5</div>
         </div>
         <div style="width:240px;height:2px;background:oklch(0.35 0.05 40 / 0.5);transform:rotate(-0.4deg);margin:16px 0 0;"></div>
       </div>
-      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px 130px 150px;">
+      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px clamp(28px,6vw,130px) 150px;">
         <div style="font-size:28px;line-height:1.58;max-width:1560px;">With things settled in the ruins, we headed outside to check our next path but found that a blizzard would soon be upon us. Tagrynn sent his bird ahead to check for nearby shelters, but came back with bad news — there is a Thunderbird flying overhead, and supposedly something bigger accompanying it. We decided to make camp in the ruins and wait for the blizzard to pass.
         <br><br>
         On further inspection of the songbook, we noticed that some of the early pages seemed grafted in from another, much older book, written in a language none of us recognize — seemingly a handwritten account of something. Orion, with his advanced height, spotted two glass beads in the eyes of the dwarven statue. Within them were images of a man, who Orion recognized to resemble the mortal form of Arodin. These beads may very well be artifacts created over 5000 years ago! Why they ended up as eyes in a Dwarven statue despite their depiction of a Human god is yet unknown to me.
@@ -218,14 +218,14 @@
     <div id="jp7" style="position:absolute;inset:0;height:100%;transform-style:preserve-3d;backface-visibility:hidden;transform-origin:center center;transition:none;transform:rotateY(0deg);opacity:1;z-index:0;visibility:hidden;display:flex;flex-direction:column;background-color:oklch(0.95 0.015 80);background-image:radial-gradient(circle at 90% 90%, oklch(0.55 0.07 40 / 0.12), transparent 42%), radial-gradient(circle at 8% 10%, oklch(0.5 0.08 50 / 0.1), transparent 46%);font-family:'EB Garamond',serif;color:oklch(0.24 0.03 40);">
       <div style="position:absolute;inset:0;box-shadow:inset 0 0 200px oklch(0.35 0.05 45 / 0.28);pointer-events:none;"></div>
       <div style="position:absolute;top:0;right:0;width:70px;height:70px;background:linear-gradient(135deg, oklch(0.88 0.02 75) 50%, oklch(0.78 0.03 60) 52%);box-shadow:-4px 4px 10px oklch(0.3 0.03 40 / 0.35);cursor:pointer;" onclick="goNext()"></div>
-      <div style="padding:70px 130px 0;">
+      <div style="padding:70px clamp(28px,6vw,130px) 0;">
         <div style="display:flex;align-items:flex-end;justify-content:space-between;">
           <div style="font-family:'Caveat',cursive;font-weight:700;font-size:56px;color:oklch(0.4 0.09 40);">Entry 6</div>
           <div style="font-family:'Caveat',cursive;font-size:26px;color:oklch(0.45 0.06 45 / 0.6);transform:rotate(-2deg);">Session 6</div>
         </div>
         <div style="width:240px;height:2px;background:oklch(0.35 0.05 40 / 0.5);transform:rotate(-0.4deg);margin:16px 0 0;"></div>
       </div>
-      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px 130px 150px;">
+      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px clamp(28px,6vw,130px) 150px;">
         <div style="font-size:28px;line-height:1.58;max-width:1560px;">It took several days of travel to reach the next Dius. Along the way I had an interesting conversation with Tagrynn who pointed out that people went to such great lengths to build this elaborate scenario. I was more interested in who those people are, and how these tasks speak to their character.
         <br><br>
         When we finally made it to the third Dius, we noticed a ring of runes around it, wearing away. After analysis I could tell there was some sort of divine spell embedded within them, but I couldn't tell its nature or potency given their condition. To test its efficacy, Orion picked up a nearby critter and tossed it across the runed threshold — it went limp, giving us much pause about the risk of entry.
@@ -251,7 +251,7 @@
     <div id="jp8" style="position:absolute;inset:0;height:100%;transform-style:preserve-3d;backface-visibility:hidden;transform-origin:center center;transition:none;transform:rotateY(0deg);opacity:1;z-index:0;visibility:hidden;display:flex;flex-direction:column;background-color:oklch(0.95 0.015 80);background-image:radial-gradient(circle at 90% 90%, oklch(0.55 0.07 40 / 0.12), transparent 42%), radial-gradient(circle at 8% 10%, oklch(0.5 0.08 50 / 0.1), transparent 46%);font-family:'EB Garamond',serif;color:oklch(0.24 0.03 40);">
       <div style="position:absolute;inset:0;box-shadow:inset 0 0 200px oklch(0.35 0.05 45 / 0.28);pointer-events:none;"></div>
       <div style="position:absolute;top:0;right:0;width:70px;height:70px;background:linear-gradient(135deg, oklch(0.88 0.02 75) 50%, oklch(0.78 0.03 60) 52%);box-shadow:-4px 4px 10px oklch(0.3 0.03 40 / 0.35);cursor:pointer;" onclick="goNext()"></div>
-      <div style="padding:70px 130px 0;">
+      <div style="padding:70px clamp(28px,6vw,130px) 0;">
         <div style="display:flex;align-items:flex-end;justify-content:space-between;">
           <div style="display:flex;align-items:baseline;gap:20px;">
             <div style="font-family:'Caveat',cursive;font-weight:700;font-size:58px;color:oklch(0.4 0.09 40);">Entry 7</div>
@@ -261,7 +261,7 @@
         </div>
         <div style="width:240px;height:2px;background:oklch(0.35 0.05 40 / 0.5);transform:rotate(-0.4deg);margin:16px 0 0;"></div>
       </div>
-      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px 130px 150px;">
+      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px clamp(28px,6vw,130px) 150px;">
         <div style="font-size:28px;line-height:1.58;max-width:1560px;">The next few days of travel go quickly. We come across a cave entrance guarded by two Fallen Champions. The party quickly comes up with an engagement strategy to prevent the guards from triggering an alarm so we can isolate and incapacitate them.
         <br><br>
         I sent Watson to distract the guards, but they didn't take the bait, so Tagrynn had his Snowfeather attempt to capture their attention instead. One of the guards casts harm on Snowfeather, causing it to flee back to Tagrynn, and the two guards to pursue it in turn.
@@ -277,7 +277,7 @@
     <div id="jp9" style="position:absolute;inset:0;height:100%;transform-style:preserve-3d;backface-visibility:hidden;transform-origin:center center;transition:none;transform:rotateY(0deg);opacity:1;z-index:0;visibility:hidden;display:flex;flex-direction:column;background-color:oklch(0.95 0.015 80);background-image:radial-gradient(circle at 8% 88%, oklch(0.55 0.07 40 / 0.12), transparent 42%), radial-gradient(circle at 92% 10%, oklch(0.5 0.08 50 / 0.1), transparent 46%);font-family:'EB Garamond',serif;color:oklch(0.24 0.03 40);">
       <div style="position:absolute;inset:0;box-shadow:inset 0 0 200px oklch(0.35 0.05 45 / 0.28);pointer-events:none;"></div>
       <div style="position:absolute;top:0;right:0;width:70px;height:70px;background:linear-gradient(135deg, oklch(0.88 0.02 75) 50%, oklch(0.78 0.03 60) 52%);box-shadow:-4px 4px 10px oklch(0.3 0.03 40 / 0.35);cursor:pointer;" onclick="goNext()"></div>
-      <div style="padding:70px 130px 0;">
+      <div style="padding:70px clamp(28px,6vw,130px) 0;">
         <div style="display:flex;align-items:flex-end;justify-content:space-between;">
           <div style="display:flex;align-items:baseline;gap:20px;">
             <div style="font-family:'Caveat',cursive;font-weight:700;font-size:56px;color:oklch(0.4 0.09 40);">Entry 7</div>
@@ -287,7 +287,7 @@
         </div>
         <div style="width:240px;height:2px;background:oklch(0.35 0.05 40 / 0.5);transform:rotate(-0.4deg);margin:16px 0 0;"></div>
       </div>
-      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px 130px 150px;">
+      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px clamp(28px,6vw,130px) 150px;">
         <div style="font-size:28px;line-height:1.58;max-width:1560px;">We took the time to heal up before properly scoping out the room the Fallen Champions had been guarding. A few pressure plates sat waiting beneath the dust, clearly primed, though our golden marks would protect us against them. In the end, the room yielded nothing of particular value.
         <br><br>
         We descended a set of stairs and, before we'd gotten very far, caught the sound of voices below in a language none of us could place. Whatever was down there, it had far too many teeth by the sound of it, and seemed to be locked in some manner of argument with something else entirely. Orion, whose unique physiology causes the concept of subtlety to remain beyond his reach, walked into the hall and immediately drew the attention of every devil within earshot.
@@ -311,7 +311,7 @@
     <div id="jp10" style="position:absolute;inset:0;height:100%;transform-style:preserve-3d;backface-visibility:hidden;transform-origin:center center;transition:none;transform:rotateY(0deg);opacity:1;z-index:0;visibility:hidden;display:flex;flex-direction:column;background-color:oklch(0.95 0.015 80);background-image:radial-gradient(circle at 90% 90%, oklch(0.55 0.07 40 / 0.12), transparent 42%), radial-gradient(circle at 8% 8%, oklch(0.5 0.08 50 / 0.1), transparent 46%);font-family:'EB Garamond',serif;color:oklch(0.24 0.03 40);">
       <div style="position:absolute;inset:0;box-shadow:inset 0 0 200px oklch(0.35 0.05 45 / 0.28);pointer-events:none;"></div>
       <div style="position:absolute;top:0;right:0;width:70px;height:70px;background:linear-gradient(135deg, oklch(0.88 0.02 75) 50%, oklch(0.78 0.03 60) 52%);box-shadow:-4px 4px 10px oklch(0.3 0.03 40 / 0.35);cursor:pointer;" onclick="goNext()"></div>
-      <div style="padding:70px 130px 0;">
+      <div style="padding:70px clamp(28px,6vw,130px) 0;">
         <div style="display:flex;align-items:flex-end;justify-content:space-between;">
           <div style="display:flex;align-items:baseline;gap:20px;">
             <div style="font-family:'Caveat',cursive;font-weight:700;font-size:56px;color:oklch(0.4 0.09 40);">Entry 7</div>
@@ -321,7 +321,7 @@
         </div>
         <div style="width:240px;height:2px;background:oklch(0.35 0.05 40 / 0.5);transform:rotate(-0.4deg);margin:16px 0 0;"></div>
       </div>
-      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px 130px 150px;">
+      <div style="flex:1;min-height:0;overflow-y:auto;padding:30px clamp(28px,6vw,130px) 150px;">
         <div style="font-size:28px;line-height:1.58;max-width:1560px;">With the last of the devils finally silenced, we allowed ourselves a proper moment to recover. Tagrynn went about tending to the worst of our wounds, while Orion turned his attention to his shield, hammering out a dent that had clearly seen better days. I took the opportunity to redistribute what remained of our purchased supplies, doling out the last of our life elixirs and a small hoard of quickness potions.
         <br><br>
         It was in the middle of this light commotion that I caught a strange banging sound drifting up from the hallway ahead. Rhythmic, deliberate, and seemingly unbothered by our presence.
@@ -347,7 +347,7 @@
     <div id="jp11" style="position:absolute;inset:0;height:100%;transform-style:preserve-3d;backface-visibility:hidden;transform-origin:center center;transition:none;transform:rotateY(0deg);opacity:1;z-index:0;visibility:hidden;display:flex;flex-direction:column;background-color:oklch(0.95 0.015 80);background-image:radial-gradient(circle at 10% 90%, oklch(0.55 0.07 40 / 0.12), transparent 42%), radial-gradient(circle at 90% 10%, oklch(0.5 0.08 50 / 0.1), transparent 46%);font-family:'EB Garamond',serif;color:oklch(0.24 0.03 40);">
       <div style="position:absolute;inset:0;box-shadow:inset 0 0 200px oklch(0.35 0.05 45 / 0.28);pointer-events:none;"></div>
       <div style="position:absolute;top:0;right:0;width:70px;height:70px;background:linear-gradient(135deg, oklch(0.88 0.02 75) 50%, oklch(0.78 0.03 60) 52%);box-shadow:-4px 4px 10px oklch(0.3 0.03 40 / 0.35);"></div>
-      <div style="padding:90px 150px 0;">
+      <div style="padding:90px clamp(32px,7vw,150px) 0;">
         <div style="display:flex;align-items:flex-end;justify-content:space-between;">
           <div style="display:flex;align-items:baseline;gap:24px;">
             <div style="font-family:'Caveat',cursive;font-weight:700;font-size:76px;color:oklch(0.4 0.09 40);">Entry 7</div>
@@ -357,7 +357,7 @@
         </div>
         <div style="width:260px;height:2px;background:oklch(0.35 0.05 40 / 0.5);transform:rotate(-0.4deg);margin:18px 0 0;"></div>
       </div>
-      <div style="flex:1;min-height:0;overflow-y:auto;padding:40px 150px 150px;">
+      <div style="flex:1;min-height:0;overflow-y:auto;padding:40px clamp(32px,7vw,150px) 150px;">
         <div style="font-size:32px;line-height:1.6;max-width:1500px;">We took what time we could to heal before returning to the main hallway to continue our investigation. It wasn't long before we sensed something magical humming behind a nearby door, and Myfanwy confirmed it was trapped before any of us got too close. I attempted to disarm it, and failed rather spectacularly. The trap triggered in response, searing me with a burn that felt as though it were trying to claw at something far more personal than my skin.
         <br><br>
         Beyond the door came a foul smell along with the faint, rhythmic sound of something heavy being dragged across stone. Orion, in his forward position, was first to catch sight of the creature within, and described it to me in enough detail that I could place it immediately: an adult Omen Dragon. Truly a legend of a creature, and likely the very one the note we found had referenced as being held captive.
@@ -457,6 +457,24 @@
     if (e.key === 'ArrowRight') goNext();
     if (e.key === 'ArrowLeft') goPrev();
   });
+  (function () {
+    var container = document.getElementById('journalContainer');
+    if (!container) return;
+    var startX = 0, startY = 0, tracking = false;
+    container.addEventListener('touchstart', function (e) {
+      var t = e.touches[0];
+      startX = t.clientX; startY = t.clientY; tracking = true;
+    }, { passive: true });
+    container.addEventListener('touchend', function (e) {
+      if (!tracking) return;
+      tracking = false;
+      var t = e.changedTouches[0];
+      var dx = t.clientX - startX, dy = t.clientY - startY;
+      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.2) {
+        turn(dx < 0 ? 1 : -1);
+      }
+    }, { passive: true });
+  })();
   applyStyles();
 </script>
 </body>
